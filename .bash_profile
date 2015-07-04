@@ -1,0 +1,5 @@
+alias l='ls -la'
+alias g='git status'
+alias ga='git add --all'
+alias gc='git commit -am "'
+alias ff='vim $(fzf)'
