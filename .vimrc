@@ -149,6 +149,14 @@ inoremap jj <esc>
 " Emmet tab key
 imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 
+" Swap Lines
+nnoremap <c-k> :m .-2<CR>==
+nnoremap <c-j> :m .+1<CR>==
+inoremap <c-k> <Esc>:m .-2<CR>==gi
+inoremap <c-j> <Esc>:m .+1<CR>==gi
+vnoremap <c-k> :m '<-2<CR>gv=gv
+vnoremap <c-j> :m '>+1<CR>gv=gv
+
 
 
 
