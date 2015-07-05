@@ -81,10 +81,10 @@ colorscheme solarized
 " ---------------------------
 
 " 4 spaces please
-set expandtab
-set shiftwidth=4
 set tabstop=4
 set softtabstop=4
+set shiftwidth=4
+set expandtab
 
 " Round indent to nearest multiple of 4
 set shiftround
