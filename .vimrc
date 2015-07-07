@@ -21,12 +21,17 @@ Plugin 'gmarik/Vundle.vim'
 " Emmet
 Plugin 'mattn/emmet-vim'
 
-" Markdown
-Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
-
 " Ack
 Plugin 'mileszs/ack.vim'
+
+" Airline
+Plugin 'bling/vim-airline'
+
+" Git Gutter
+Plugin 'airblade/vim-gitgutter'
+
+" Fugitive
+Plugin 'tpope/vim-fugitive'
 
 " ---------
 
@@ -165,8 +170,11 @@ vnoremap <c-j> :m '>+1<CR>gv=gv
 " Plugin specific
 " ---------------
 
-" Markdown disable folding
-set nofoldenable
-
 " Fuzzyfinder integration
 set rtp+=~/.fzf
+
+" Show airline status bar
+set laststatus=2
+
+" Show Powerline font for airline
+let g:airline_powerline_fonts = 1
