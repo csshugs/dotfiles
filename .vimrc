@@ -129,7 +129,7 @@ endif
 set cursorline
 
 " Don't keep results highlighted after searching...
-set hls
+set nohlsearch
 
 " ...just highlight as we type
 set incsearch
