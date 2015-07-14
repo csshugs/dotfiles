@@ -33,6 +33,9 @@ Plugin 'airblade/vim-gitgutter'
 " Fugitive
 Plugin 'tpope/vim-fugitive'
 
+" Multiple Cursors
+Plugin 'terryma/vim-multiple-cursors'
+
 " ---------
 
 
