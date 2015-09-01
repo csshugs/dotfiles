@@ -1,8 +1,6 @@
 [user]
     name = Dennis Heibült
     email = dennis@csshugs.com
-[merge]
-    tool = sublimerge
 [alias]
     co = checkout
     c = commit
@@ -10,15 +8,15 @@
     b = branch
 [push]
     default = matching
-[mergetool "sublimerge"]
-    cmd = sublime -n --wait \"$REMOTE\" \"$BASE\" \"$LOCAL\" \"$MERGED\" --command \"sublimerge_diff_views\"
-    trustExitCode = false
-    keepBackup = false
-[diff]
-    tool = sublimerge
-[difftool "sublimerge"]
-    cmd = sublime -n --wait \"$REMOTE\" \"$LOCAL\" --command \"sublimerge_diff_views {\\\"left_read_only\\\": true, \\\"right_read_only\\\": true}\"
-[credential]
-    helper = cache --timeout=3600
 [color]
 	ui = true
+[credential]
+    helper = cache --timeout=3600
+[merge]
+    tool = vimdiff
+    conflictstyle = diff3
+[mergetool]
+    prompt = false
+    keepBackup = false
+[core]
+	editor = vim
