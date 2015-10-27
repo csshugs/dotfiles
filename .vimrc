@@ -36,6 +36,9 @@ Plugin 'tpope/vim-fugitive'
 " Multiple Cursors
 Plugin 'terryma/vim-multiple-cursors'
 
+"commentary.vim
+Plugin 'tpope/vim-commentary'
+
 " ---------
 
 
