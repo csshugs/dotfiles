@@ -21,9 +21,6 @@ Plugin 'gmarik/Vundle.vim'
 " Emmet
 Plugin 'mattn/emmet-vim'
 
-" Ack
-Plugin 'mileszs/ack.vim'
-
 " Airline
 Plugin 'bling/vim-airline'
 
@@ -36,8 +33,11 @@ Plugin 'tpope/vim-fugitive'
 " Multiple Cursors
 Plugin 'terryma/vim-multiple-cursors'
 
-"commentary.vim
+" commentary.vim
 Plugin 'tpope/vim-commentary'
+
+" Mustache and Handlebars syntax
+Plugin 'mustache/vim-mustache-handlebars'
 
 " ---------
 
@@ -176,11 +176,11 @@ vnoremap <c-j> :m '>+1<CR>gv=gv
 " Plugin specific
 " ---------------
 
-" Fuzzyfinder integration
-set rtp+=~/.fzf
-
 " Show airline status bar
 set laststatus=2
 
 " Show Powerline font for airline
 let g:airline_powerline_fonts = 1
+
+" Mustache abbreviations
+let g:mustache_abbreviations = 1

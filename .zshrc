@@ -21,4 +21,3 @@ source $ZSH/oh-my-zsh.sh
 alias l="ls -la"
 alias g="git status"
 alias ga="git add --all"
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
