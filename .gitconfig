@@ -13,10 +13,10 @@
 [credential]
     helper = cache --timeout=3600
 [merge]
-    tool = vimdiff
-    conflictstyle = diff3
-[mergetool]
-    prompt = false
+    tool = sublimerge
+[mergetool "sublimerge"]
+    cmd = subl -n --wait \"$REMOTE\" \"$BASE\" \"$LOCAL\" \"$MERGED\" --command \"sublimerge_diff_views\"
+    trustExitCode = false
     keepBackup = false
 [core]
 	editor = vim
