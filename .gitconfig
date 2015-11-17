@@ -9,7 +9,7 @@
 [push]
     default = matching
 [color]
-	ui = true
+    ui = true
 [credential]
     helper = cache --timeout=3600
 [merge]
@@ -19,4 +19,4 @@
     trustExitCode = false
     keepBackup = false
 [core]
-	editor = vim
+    editor = vim
