@@ -15,7 +15,7 @@
 [merge]
     tool = sublimerge
 [mergetool "sublimerge"]
-    cmd = subl -n --wait \"$REMOTE\" \"$BASE\" \"$LOCAL\" \"$MERGED\" --command \"sublimerge_diff_views\"
+    cmd = sublime -n --wait \"$REMOTE\" \"$BASE\" \"$LOCAL\" \"$MERGED\" --command \"sublimerge_diff_views\"
     trustExitCode = false
     keepBackup = false
 [core]
