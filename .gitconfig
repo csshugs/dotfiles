@@ -13,7 +13,7 @@
 [credential]
     helper = cache --timeout=3600
 [merge]
-	tool = opendiff
+    tool = sublimerge
 [mergetool "sublimerge"]
     cmd = sublime -n --wait \"$REMOTE\" \"$BASE\" \"$LOCAL\" \"$MERGED\" --command \"sublimerge_diff_views\"
     trustExitCode = false
