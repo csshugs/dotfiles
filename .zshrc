@@ -20,4 +20,5 @@ source $ZSH/oh-my-zsh.sh
 # Aliases.
 alias l="ls -la"
 alias g="git status"
-alias ga="git add --all"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
