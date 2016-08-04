@@ -3,8 +3,6 @@
     email = dennis@csshugs.com
 [alias]
     co = checkout
-    c = commit
-    s = status
     b = branch
 [push]
     default = matching
@@ -20,6 +18,3 @@
     cmd = subl -n --wait \"$REMOTE\" \"$BASE\" \"$LOCAL\" \"$MERGED\" --command \"sublimerge_diff_views\"
     trustExitCode = false
     keepBackup = false
-[mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-	trustexitcode = true
