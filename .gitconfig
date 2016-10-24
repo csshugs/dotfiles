@@ -1,6 +1,6 @@
 [user]
-    name = Dennis Heibült
-    email = dennis@csshugs.com
+	name = Dennis Heibült
+	email = dennis@csshugs.com
 [alias]
     co = checkout
     b = branch
@@ -12,9 +12,18 @@
     helper = cache --timeout=3600
 [core]
     editor = vim
+	excludesfile = /Users/dheibuelt/.gitignore_global
 [merge]
     tool = sublimerge
 [mergetool "sublimerge"]
     cmd = subl -n --wait \"$REMOTE\" \"$BASE\" \"$LOCAL\" \"$MERGED\" --command \"sublimerge_diff_views\"
     trustExitCode = false
     keepBackup = false
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/dheibuelt/.stCommitMsg
