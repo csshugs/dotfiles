@@ -4,6 +4,7 @@
 [alias]
     co = checkout
     b = branch
+    stats = shortlog -sn --all --no-merges
 [push]
     default = matching
 [color]
