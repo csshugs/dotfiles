@@ -83,6 +83,9 @@ set hidden
 set background=dark
 colorscheme solarized
 
+" Make vim colors compatible with hyper.js terminal
+set termguicolors
+
 
 
 
