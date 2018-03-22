@@ -5,6 +5,7 @@
     co = checkout
     b = branch
     stats = shortlog -sn --all --no-merges
+    lg = log --pretty=oneline --abbrev-commit --graph --decorate
 [push]
     default = matching
 [color]
