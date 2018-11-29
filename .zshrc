@@ -22,4 +22,9 @@ alias l="ls -lhFG"
 alias g="git status"
 alias sag="say -v Anna"
 
+# Add zsh iTerm integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+export PATH="~/.pyenv/bin:$PATH"
