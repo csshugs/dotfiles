@@ -2,6 +2,7 @@
 	name = Dennis Heibült
 	email = dennis@csshugs.com
 [alias]
+    schmu = blame
     co = checkout
     b = branch
     stats = shortlog -sn --all --no-merges
