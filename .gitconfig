@@ -23,5 +23,3 @@
 	prompt = false
 [diff]
     tool = vimdiff
-[commit]
-    template = /Users/dheibuelt/.stCommitMsg
