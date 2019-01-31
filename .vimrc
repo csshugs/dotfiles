@@ -1,18 +1,22 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
+
+
+
+
 " ------
 " Vundle
 " ------
 
-" Required
+" Required.
 filetype off
 
-" Set the runtime path to include Vundle and initialize
+" Set the runtime path to include Vundle and initialize.
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" Let Vundle manage Vundle, required
+" Let Vundle manage Vundle (required).
 Plugin 'gmarik/Vundle.vim'
 
 
@@ -42,7 +46,7 @@ Plugin 'mustache/vim-mustache-handlebars'
 " ---------
 
 
-" All of your Plugins must be added before the following line
+" All of your Plugins must be added before the following line.
 call vundle#end()
 
 
@@ -59,16 +63,16 @@ set encoding=utf-8
 " Make backspace behave in a sane manner.
 set backspace=indent,eol,start
 
-" Switch syntax highlighting on
+" Switch syntax highlighting on.
 syntax on
 
 " Enable file type detection and do language-dependent indenting.
 filetype plugin indent on
 
-" Show line numbers
+" Show line numbers.
 set number
 
-" Allow hidden buffers, don't limit to 1 file per window/split
+" Allow hidden buffers, don’t limit to 1 file per window/split.
 set hidden
 
 
@@ -79,12 +83,10 @@ set hidden
 " Theme
 " -----
 
-" Dark solarized scheme
+" Dark solarized scheme.
+syntax enable
 set background=dark
 colorscheme solarized
-
-" Make vim colors compatible with hyper.js terminal
-set termguicolors
 
 
 
@@ -94,16 +96,16 @@ set termguicolors
 " Tabs, indentation and lines
 " ---------------------------
 
-" 4 spaces please
+" 4 spaces please!
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab
 
-" Round indent to nearest multiple of 4
+" Round indent to nearest multiple of 4.
 set shiftround
 
-" No line-wrapping
+" No line-wrapping.
 set nowrap
 
 
@@ -114,11 +116,11 @@ set nowrap
 " Interactions
 " ------------
 
-" Start scrolling slightly before the cursor reaches an edge
+" Start scrolling slightly before the cursor reaches an edge.
 set scrolloff=3
 set sidescrolloff=5
 
-" Show file options above the command line
+" Show file options above the command line.
 set wildmenu
 
 
@@ -129,27 +131,27 @@ set wildmenu
 " Visual decorations
 " ------------------
 
-" Show file title in terminal tab
+" Show file title in terminal tab.
 set title
 
-" Limit line-length to 80 columns by highlighting col 81 onward
+" Limit line-length to 80 columns by highlighting col 81 onward.
 if exists("+colorcolumn")
     set colorcolumn=81
 endif
 
-" Highlight current line
+" Highlight current line.
 set cursorline
 
 " Don't keep results highlighted after searching...
 set nohlsearch
 
-" ...just highlight as we type
+" ...just highlight as we type.
 set incsearch
 
 " Ignore case when searching...
 set ignorecase
 
-" ...except if we input a capital letter
+" ...except if we input a capital letter.
 set smartcase
 
 
@@ -160,13 +162,13 @@ set smartcase
 " Key mappings
 " ------------
 
-" jj to throw you into normal mode from insert mode
+" jj to throw you into normal mode from insert mode.
 inoremap jj <esc>
 
-" Emmet tab key
+" Emmet tab key.
 imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 
-" Swap Lines
+" Swap Lines.
 nnoremap <c-k> :m .-2<CR>==
 nnoremap <c-j> :m .+1<CR>==
 inoremap <c-k> <Esc>:m .-2<CR>==gi
@@ -182,11 +184,11 @@ vnoremap <c-j> :m '>+1<CR>gv=gv
 " Plugin specific
 " ---------------
 
-" Show airline status bar
+" Show airline status bar.
 set laststatus=2
 
-" Show Powerline font for airline
+" Show Powerline font for airline.
 let g:airline_powerline_fonts = 1
 
-" Mustache abbreviations
+" Mustache abbreviations.
 let g:mustache_abbreviations = 1

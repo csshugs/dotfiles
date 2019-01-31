@@ -1,3 +1,7 @@
+# -----
+# Setup
+# -----
+
 # Path to oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -9,7 +13,9 @@ plugins=(z sublime osx brew chucknorris sudo)
 
 
 
+# ------------------
 # User configuration
+# ------------------
 
 # PATH.
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
@@ -22,7 +28,7 @@ alias l="ls -lhFG"
 alias g="git status"
 alias sag="say -v Anna"
 
-# Add zsh iTerm integration
+# Add zsh iTerm2 integration.
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
