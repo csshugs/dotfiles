@@ -1,61 +1,9 @@
-" This must be first, because it changes other options as a side effect.
-set nocompatible
-
-
-
-
-
-" ------
-" Vundle
-" ------
-
-" Required.
-filetype off
-
-" Set the runtime path to include Vundle and initialize.
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" Let Vundle manage Vundle (required).
-Plugin 'gmarik/Vundle.vim'
-
-
-" ---------
-
-" Emmet
-Plugin 'mattn/emmet-vim'
-
-" Airline
-Plugin 'bling/vim-airline'
-
-" Git Gutter
-Plugin 'airblade/vim-gitgutter'
-
-" Fugitive
-Plugin 'tpope/vim-fugitive'
-
-" Multiple Cursors
-Plugin 'terryma/vim-multiple-cursors'
-
-" commentary.vim
-Plugin 'tpope/vim-commentary'
-
-" Mustache and Handlebars syntax
-Plugin 'mustache/vim-mustache-handlebars'
-
-" ---------
-
-
-" All of your Plugins must be added before the following line.
-call vundle#end()
-
-
-
-
-
 " -----
 " Reset
 " -----
+
+" This must be first, because it changes other options as a side effect.
+set nocompatible
 
 " Encoding
 set encoding=utf-8
@@ -69,7 +17,10 @@ syntax on
 " Enable file type detection and do language-dependent indenting.
 filetype plugin indent on
 
-" Show line numbers.
+" Set relative line numbers...
+set relativenumber
+
+" ...but absolute numbers on the current line.
 set number
 
 " Allow hidden buffers, don’t limit to 1 file per window/split.
@@ -142,7 +93,7 @@ endif
 " Highlight current line.
 set cursorline
 
-" Don't keep results highlighted after searching...
+" Don’t keep results highlighted after searching...
 set nohlsearch
 
 " ...just highlight as we type.
@@ -164,31 +115,3 @@ set smartcase
 
 " jj to throw you into normal mode from insert mode.
 inoremap jj <esc>
-
-" Emmet tab key.
-imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
-
-" Swap Lines.
-nnoremap <c-k> :m .-2<CR>==
-nnoremap <c-j> :m .+1<CR>==
-inoremap <c-k> <Esc>:m .-2<CR>==gi
-inoremap <c-j> <Esc>:m .+1<CR>==gi
-vnoremap <c-k> :m '<-2<CR>gv=gv
-vnoremap <c-j> :m '>+1<CR>gv=gv
-
-
-
-
-
-" ---------------
-" Plugin specific
-" ---------------
-
-" Show airline status bar.
-set laststatus=2
-
-" Show Powerline font for airline.
-let g:airline_powerline_fonts = 1
-
-" Mustache abbreviations.
-let g:mustache_abbreviations = 1
