@@ -3,4 +3,9 @@
 !.gitconfig
 !.gitignore
 !.vimrc
+!.vim/
+.vim/autoload/
+.vim/colors/
+.vim/plugged/
+.vim/.netrwhist
 !.zshrc

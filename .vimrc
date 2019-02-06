@@ -14,6 +14,9 @@ set backspace=indent,eol,start
 " Switch syntax highlighting on.
 syntax on
 
+" Enable file type detection.
+filetype plugin on
+
 " Enable file type detection and do language-dependent indenting.
 filetype plugin indent on
 
@@ -115,3 +118,26 @@ set smartcase
 
 " jj to throw you into normal mode from insert mode.
 inoremap jj <esc>
+
+
+
+
+
+" ----------------------
+" Plugins (via vim-plug)
+" ----------------------
+
+call plug#begin('~/.vim/plugged')
+
+" Use fzf fuzzy finder in Vim.
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+
+" Handlebars and Mustache Syntax Highlighting.
+Plug 'mustache/vim-mustache-handlebars'
+
+call plug#end()
+
+
+
+" Enable Mustache abbreviations.
+let g:mustache_abbreviations = 1
