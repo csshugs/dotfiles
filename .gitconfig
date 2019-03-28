@@ -2,6 +2,7 @@
 	name = Dennis Heibült
 	email = mail@dennisheibuelt.com
 [alias]
+    poop = stash pop
     schmu = blame
     co = checkout
     b = branch
