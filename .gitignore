@@ -4,6 +4,7 @@
 !.fzf.zsh
 !.gitconfig
 !.gitignore
+!README.md
 !.vimrc
 !.vim/
 .vim/plugged/
