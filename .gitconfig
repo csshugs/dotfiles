@@ -1,6 +1,7 @@
 [user]
-	name = Dennis Heibült
-	email = mail@dennisheibuelt.com
+    name = Dennis Heibült
+    email = mail@dennisheibuelt.com
+    signingkey = 437D74554D7E684AD8131480646160EEB22C1686
 [alias]
     poop = stash pop
     schmu = blame
@@ -16,11 +17,15 @@
     helper = cache --timeout=3600
 [core]
     editor = vim
-	excludesfile = /Users/dheibuelt/.gitignore_global
+    excludesfile = /Users/dheibuelt/.gitignore_global
 [merge]
-	tool = vimdiff
-	conflictstyle = diff3
+    tool = vimdiff
+    conflictstyle = diff3
 [mergetool "vimdiff"]
-	prompt = false
+    prompt = false
 [diff]
     tool = vimdiff
+[gpg]
+    program = /usr/local/bin/gpg
+[commit]
+    gpgsign = true
