@@ -143,6 +143,9 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 " Handlebars and Mustache Syntax Highlighting.
 Plug 'mustache/vim-mustache-handlebars'
 
+" Provide proper SCSS syntax.
+Plug 'cakebaker/scss-syntax.vim'
+
 call plug#end()
 
 
