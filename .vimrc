@@ -138,7 +138,7 @@ inoremap jj <esc>
 call plug#begin('~/.vim/plugged')
 
 " Use fzf fuzzy finder in Vim.
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug '/usr/local/opt/fzf'
 
 " Handlebars and Mustache Syntax Highlighting.
 Plug 'mustache/vim-mustache-handlebars'
@@ -149,6 +149,12 @@ Plug 'cakebaker/scss-syntax.vim'
 call plug#end()
 
 
+
+" Setting fd as the default source for fzf
+let FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
+
+" To apply the command to CTRL-T as well
+let FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 " Enable Mustache abbreviations.
 let g:mustache_abbreviations = 1
