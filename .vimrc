@@ -127,6 +127,10 @@ set smartcase
 " jj to throw you into normal mode from insert mode.
 inoremap jj <esc>
 
+" Open files using fzf.
+nnoremap <silent> <leader>o :Files<CR>
+nnoremap <silent> <leader>O :Files!<CR>
+
 
 
 
@@ -139,6 +143,7 @@ call plug#begin('~/.vim/plugged')
 
 " Use fzf fuzzy finder in Vim.
 Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
 
 " Handlebars and Mustache Syntax Highlighting.
 Plug 'mustache/vim-mustache-handlebars'
@@ -152,6 +157,10 @@ call plug#end()
 
 " Setting fd as the default source for fzf
 let FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
+
+" Use preview when FZF runs in fullscreen mode (FZF!)
+command! -nargs=? -bang -complete=dir Files
+  \ call fzf#vim#files(<q-args>, <bang>0 ? fzf#vim#with_preview('up:60%') : {}, <bang>0)
 
 " To apply the command to CTRL-T as well
 let FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"

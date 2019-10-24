@@ -12,6 +12,12 @@ $ brew install fzf
 $ brew install fd
 ```
 
+### [bat](https://github.com/sharkdp/bat)
+
+```
+$ brew install bat
+```
+
 ### Vim
 
 Install the plugins (via [vim-plug](https://github.com/junegunn/vim-plug)):
