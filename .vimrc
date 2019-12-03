@@ -151,6 +151,9 @@ Plug 'mustache/vim-mustache-handlebars'
 " Provide proper SCSS syntax.
 Plug 'cakebaker/scss-syntax.vim'
 
+" Use `.editorconfig` files in Vim.
+Plug 'editorconfig/editorconfig-vim'
+
 call plug#end()
 
 
