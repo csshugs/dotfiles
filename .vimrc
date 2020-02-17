@@ -145,8 +145,14 @@ call plug#begin('~/.vim/plugged')
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 
+" Emmet.
+Plug 'mattn/emmet-vim'
+
 " Handlebars and Mustache Syntax Highlighting.
 Plug 'mustache/vim-mustache-handlebars'
+
+" Jinja2 (i.e. Nunjucks) Syntax Highlighting.
+Plug 'Glench/Vim-Jinja2-Syntax'
 
 " Provide proper SCSS syntax.
 Plug 'cakebaker/scss-syntax.vim'
@@ -157,6 +163,10 @@ Plug 'editorconfig/editorconfig-vim'
 call plug#end()
 
 
+
+" Use Tab key for emmet,
+let g:user_emmet_expandabbr_key='<Tab>'
+imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 
 " Setting fd as the default source for fzf
 let FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
