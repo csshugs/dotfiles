@@ -131,6 +131,11 @@ inoremap jj <esc>
 nnoremap <silent> <leader>o :Files<CR>
 nnoremap <silent> <leader>O :Files!<CR>
 
+" Remap buffer shortcuts.
+map <leader>n :bn<cr>
+map <leader>p :bp<cr>
+map <leader>d :bd<cr>
+
 
 
 
