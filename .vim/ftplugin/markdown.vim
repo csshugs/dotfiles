@@ -1,3 +1,6 @@
 " Auto word wrap to 80 characters.
-setlocal textwidth=80
-setlocal formatoptions=cqnt
+set wrap
+set linebreak
+set textwidth=0
+set wrapmargin=0
+set formatoptions+=l
