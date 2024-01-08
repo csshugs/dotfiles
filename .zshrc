@@ -2,6 +2,9 @@
 # Setup
 # -----
 
+# Set command line language to english
+export LANG=en_US.UTF-8
+
 # Path to oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
